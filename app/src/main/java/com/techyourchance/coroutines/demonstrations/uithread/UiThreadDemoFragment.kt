@@ -38,6 +38,7 @@ class UiThreadDemoFragment : BaseFragment() {
         return view
     }
 
+    //blocking main ui thread
     private fun executeBenchmark() {
         val benchmarkDurationSeconds = 5
 
