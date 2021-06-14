@@ -14,8 +14,11 @@ import com.techyourchance.coroutines.R
 import com.techyourchance.coroutines.common.BaseFragment
 import com.techyourchance.coroutines.common.ThreadInfoLogger
 import com.techyourchance.coroutines.home.ScreenReachableFromHome
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class UiThreadDemoFragment : BaseFragment() {
+
 
     override val screenTitle get() = ScreenReachableFromHome.UI_THREAD_DEMO.description
 
@@ -36,6 +39,7 @@ class UiThreadDemoFragment : BaseFragment() {
         }
 
         return view
+
     }
 
     //blocking main ui thread
